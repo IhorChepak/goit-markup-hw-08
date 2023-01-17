@@ -1,0 +1,40 @@
+.clients-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.cliets-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-box {
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+}
+
+.button-icon {
+    border: 1px solid $color-client-box;
+    border-radius: 4px;
+    background-color: $color-main;
+    fill: $color-client-box;
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    transition-property: color, fill, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid $color-text-action;
+        border-radius: 4px;
+        fill: $color-text-action;
+        cursor: pointer;
+    }
+}
