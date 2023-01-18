@@ -21,14 +21,33 @@
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 94px;
+    @media screen and (min-width: $mobile) {
+        margin-bottom: 60px;
+    }
+    // @media screen and (min-width: $tablet) {
+    //     margin-bottom: 60px;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //     margin-bottom: 94px;
+    // }
 }
 
 .container {
-    width: 1200px;
+    // min-width: 320px;
+    // max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    text-align: center;
+    // 
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+    }
 }
 
 
